@@ -1,8 +1,20 @@
 import React from 'react';
+import MasonryLayout from "../components/masonry-layout";
+import Card from "../components/card";
 
 function Detail () {
   return (
-    <div>Detail</div>
+    <MasonryLayout config="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m ">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </MasonryLayout>
   )
 }
 

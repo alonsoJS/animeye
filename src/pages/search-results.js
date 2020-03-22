@@ -2,6 +2,9 @@ import React from 'react';
 import _ from 'lodash';
 import useActions from '../use-actions';
 import {useStateValue} from "../context";
+import Card from "../components/card";
+import MasonryLayout from "../components/masonry-layout";
+import MainFrame from "../components/main-frame";
 
 function SearchResults () {
   const { search } = useActions();
@@ -12,12 +15,18 @@ function SearchResults () {
   }
 
   return (
-    <div>
+    <MainFrame>
       <button onClick={clickHandler}>Hey</button>
-      {
-        _.isEqual(state.search_results, {}) ? 'No results': state.search_results.map(item => <div key={item.mal_id}>{item.title}</div>)
-      }
-    </div>
+      <MasonryLayout config="uk-child-width-1-2@s uk-child-width-1-5@m">
+        {
+          _.isEqual(state.search_results, {})
+            ? 'No results'
+            : state.search_results.map(item =>
+              <Card key={item.mal_id} data={item}/>
+            )
+        }
+      </MasonryLayout>
+    </MainFrame>
   )
 }
 

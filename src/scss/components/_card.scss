@@ -1,0 +1,54 @@
+$selector: '#root .card';
+
+#{$selector} {
+  position: relative;
+
+  &__container {
+    border-radius: 5px;
+  }
+
+  &__mainImg {
+    border-radius: 5px;
+  }
+
+  &__overlay {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0.2) 90%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__infoContainer {
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: $midnight;
+    margin: 0;
+    line-height: 24px;
+    max-height: 72px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__score,
+  &__episodes{
+    font-family: 'Rubik', sans-serif;
+    color: $midnight;
+    font-size: 14px;
+    margin: 0;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}
