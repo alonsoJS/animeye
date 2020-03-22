@@ -6,19 +6,24 @@ import {
 } from "react-router-dom";
 import Detail from "./pages/detail";
 import SearchResults from "./pages/search-results";
+import {StateProvider} from "./context";
+import stateSchema from './state';
+import reducer from './reducer';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/detail">
-          <Detail/>
-        </Route>
-        <Route path="/">
-          <SearchResults/>
-        </Route>
-      </Switch>
-    </Router>
+    <StateProvider initialState={stateSchema} reducer={reducer}>
+      <Router>
+        <Switch>
+          <Route path="/detail">
+            <Detail/>
+          </Route>
+          <Route path="/">
+            <SearchResults/>
+          </Route>
+        </Switch>
+      </Router>
+    </StateProvider>
   );
 }
 
