@@ -7,6 +7,11 @@ export default (state, action) => {
         ...state,
         search_results: action.payload
       };
+    case constants.SET_SELECTED_ITEM_INFO_ACTION:
+      return {
+        ...state,
+        selected_item: action.payload
+      };
     default:
       return state;
   }

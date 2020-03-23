@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-async function search (params) {
+async function search(params) {
   const {
     query
   } = params;

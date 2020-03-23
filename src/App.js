@@ -9,13 +9,18 @@ import SearchResults from "./pages/search-results";
 import {StateProvider} from "./context";
 import stateSchema from './state';
 import reducer from './reducer';
+import Header from "./components/header";
+import MainFrame from "./components/main-frame";
 
 function App() {
   return (
     <StateProvider initialState={stateSchema} reducer={reducer}>
+      <MainFrame>
+       <Header/>
+      </MainFrame>
       <Router>
         <Switch>
-          <Route path="/detail">
+          <Route path="/detail/:id">
             <Detail/>
           </Route>
           <Route path="/">

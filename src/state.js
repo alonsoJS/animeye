@@ -1,3 +1,4 @@
 export default {
-  search_results: []
+  search_results: [],
+  selected_item: {}
 };

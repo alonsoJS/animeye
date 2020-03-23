@@ -1,17 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Card ({data}) {
   const {
     image_url: img,
+    mal_id: id,
     title,
     score,
     episodes
   } = data;
 
   return (
-    <div className="card">
+    <Link className="card" to={`/detail/${id}`}>
       <div className="uk-card uk-card-default card__container uk-transition-toggle">
-        <img src={img} alt={title} className="card__mainImg uk-transition-scale-up uk-transition-opaque" />
+        <img src={img} alt={title} className="card__mainImg uk-transition-scale-up uk-transition-opaque" data-uk-img />
         <div className="card__overlay uk-transition-slide-bottom-small">
           <div className="card__infoContainer">
             <h2 className="card__title">{title}</h2>
@@ -20,7 +22,7 @@ function Card ({data}) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
