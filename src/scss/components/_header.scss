@@ -1,0 +1,16 @@
+$selector: '#root .header';
+
+#{$selector} {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 54px;
+
+  .logo {
+    width: 25%;
+  }
+
+  .searchBar {
+    margin-top: 8px;
+    width: 75%;
+  }
+}

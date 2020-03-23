@@ -11,7 +11,7 @@ function Card ({data}) {
   return (
     <div className="card">
       <div className="uk-card uk-card-default card__container uk-transition-toggle">
-        <img src={img} alt={title} className="card__mainImg" />
+        <img src={img} alt={title} className="card__mainImg uk-transition-scale-up uk-transition-opaque" />
         <div className="card__overlay uk-transition-slide-bottom-small">
           <div className="card__infoContainer">
             <h2 className="card__title">{title}</h2>

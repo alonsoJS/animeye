@@ -1,0 +1,44 @@
+$selector: '#root .searchBar';
+
+#{$selector} {
+
+  &__form {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  }
+
+  &__select {
+    background-color: $cerulean;
+    background-image: url('../../images/sort.svg');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 10%;
+    border: 0;
+    font-family: 'Hamish', sans-serif;
+    font-size: 24px;
+    color: $midnight;
+    border-radius: 5px 0 0 5px;
+    width: 136px;
+    height: 39px;
+    padding-left: 16px;
+  }
+
+  &__submitBtn {
+    background: $cerulean;
+    color: $midnight;
+    font-size: 24px;
+    border: 0;
+    height: 39px;
+    width: 62px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  &__searchInput {
+    height: 39px;
+    flex-basis: 100%;
+    border: 1px solid $cerulean;
+    border-left: 0;
+    border-right: 0;
+  }
+}

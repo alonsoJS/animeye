@@ -1,22 +1,19 @@
 import React from 'react';
 import _ from 'lodash';
-import useActions from '../use-actions';
 import {useStateValue} from "../context";
 import Card from "../components/card";
 import MasonryLayout from "../components/masonry-layout";
 import MainFrame from "../components/main-frame";
+import Header from "../components/header";
+import PageTitle from "../components/page-title";
 
 function SearchResults () {
-  const { search } = useActions();
   const [state] = useStateValue();
-
-  function clickHandler () {
-    search();
-  }
 
   return (
     <MainFrame>
-      <button onClick={clickHandler}>Hey</button>
+      <Header/>
+      <PageTitle title="Results" />
       <MasonryLayout config="uk-child-width-1-2@s uk-child-width-1-5@m">
         {
           _.isEqual(state.search_results, {})

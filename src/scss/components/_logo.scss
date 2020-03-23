@@ -1,0 +1,17 @@
+$selector: '#root .logo';
+
+#{$selector} {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    width: 110px;
+  }
+
+  &__title {
+    font-family: 'Hamish', sans-serif;
+    color: $midnight;
+    font-size: 40px;
+    margin: 5px 0 0 8px;
+  }
+}
