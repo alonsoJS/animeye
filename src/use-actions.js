@@ -16,17 +16,27 @@ function useActions() {
   }
 
   async function setSelectedItemInfo(id) {
-    const payload = await getItemInfo(id);
+    toggleIsLoading();
 
+    getItemInfo(id).then(payload => {
+      dispatch({
+        type: constants.SET_SELECTED_ITEM_INFO_ACTION,
+        payload
+      });
+      toggleIsLoading();
+    });
+  }
+
+  function toggleIsLoading() {
     dispatch({
-      type: constants.SET_SELECTED_ITEM_INFO_ACTION,
-      payload
-    })
+      type: constants.TOGGLE_IS_LOADING
+    });
   }
 
   return {
     search,
-    setSelectedItemInfo
+    setSelectedItemInfo,
+    toggleIsLoading
   };
 }
 

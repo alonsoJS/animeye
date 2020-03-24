@@ -12,6 +12,11 @@ export default (state, action) => {
         ...state,
         selected_item: action.payload
       };
+    case constants.TOGGLE_IS_LOADING:
+      return {
+        ...state,
+        is_loading_info: !state.is_loading_info
+      };
     default:
       return state;
   }

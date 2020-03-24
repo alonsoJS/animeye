@@ -20,7 +20,7 @@ function App() {
       </MainFrame>
       <Router>
         <Switch>
-          <Route path="/detail/:id">
+          <Route path="/anime/:id/:name">
             <Detail/>
           </Route>
           <Route path="/">

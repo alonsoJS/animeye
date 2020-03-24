@@ -1,0 +1,38 @@
+$selector: '#root .detailTextBlock';
+
+#{$selector} {
+  margin-top: 30px;
+  border-bottom: 1px solid $midnight;
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: $midnight;
+  }
+
+  &__subTitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: $midnight;
+    margin: 0;
+  }
+
+  &__text,
+  &__listItem {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $midnight;
+    margin-bottom: 30px;
+  }
+
+  &__listItem {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    margin-top: 5px;
+  }
+}

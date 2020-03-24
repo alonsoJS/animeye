@@ -11,8 +11,8 @@ function Card ({data}) {
   } = data;
 
   return (
-    <Link className="card" to={`/detail/${id}`}>
-      <div className="uk-card uk-card-default card__container uk-transition-toggle">
+    <Link className="card" to={`/anime/${id}/${encodeURI(title.replace(/\s+/g, '_'))}`}>
+      <div className="uk-card uk-card-default uk-card-hover card__container uk-transition-toggle">
         <img src={img} alt={title} className="card__mainImg uk-transition-scale-up uk-transition-opaque" data-uk-img />
         <div className="card__overlay uk-transition-slide-bottom-small">
           <div className="card__infoContainer">
