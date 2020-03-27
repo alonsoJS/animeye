@@ -4,13 +4,26 @@ $selector: '#root .header';
   display: flex;
   align-items: flex-start;
   margin-top: 54px;
+  flex-direction: column;
+
+  @include tablet-up() {
+    flex-direction: row;
+  }
 
   .logo {
-    width: 25%;
+    width: 100%;
+
+    @include tablet-up() {
+      width: 25%;
+    }
   }
 
   .searchBar {
     margin-top: 8px;
-    width: 75%;
+    width: 100%;
+
+    @include tablet-up() {
+      width: 75%;
+    }
   }
 }

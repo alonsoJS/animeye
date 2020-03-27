@@ -2,10 +2,20 @@ $selector: '#root .logo';
 
 #{$selector} {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet-up() {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
   &__img {
-    width: 110px;
+    width: 85px;
+
+    @include tablet-up() {
+      width: 110px;
+    }
   }
 
   &__title {

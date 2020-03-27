@@ -7,11 +7,13 @@ function useActions() {
   const [, dispatch] = useStateValue();
 
   async function search(params) {
-    const payload = await searchFromApi(params);
-
-    dispatch({
-      type: constants.SEARCH_ACTION,
-      payload
+    toggleIsLoading();
+    searchFromApi(params).then(payload => {
+      dispatch({
+        type: constants.SEARCH_ACTION,
+        payload
+      });
+      toggleIsLoading();
     });
   }
 
@@ -33,10 +35,18 @@ function useActions() {
     });
   }
 
+  function updateIsMobile(isMobile) {
+    dispatch({
+      type: constants.UPDATE_IS_MOBILE,
+      payload: isMobile
+    })
+  }
+
   return {
     search,
     setSelectedItemInfo,
-    toggleIsLoading
+    toggleIsLoading,
+    updateIsMobile
   };
 }
 

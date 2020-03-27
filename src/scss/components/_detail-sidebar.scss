@@ -3,12 +3,45 @@ $selector: '#root .detailSidebar';
 #{$selector} {
   &__title {
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: $midnight;
-    margin-top: 28px;
-    margin-bottom: 5px;
+
+    @include tablet-up {
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: $midnight;
+      margin-top: 28px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid $midnight;
+
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+  &__ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__accordionItem {
+    margin-top: 30px;
     border-bottom: 1px solid $midnight;
+
+    @include tablet-up() {
+      border: 0;
+    }
+  }
+
+  &__textContainer {
+    margin-bottom: 30px;
+
+    @include tablet-up {
+      margin-bottom: 0;
+    }
   }
 
   &__text {

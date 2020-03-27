@@ -11,6 +11,15 @@ $selector: '#root .detailTextBlock';
     color: $midnight;
   }
 
+  &__accordionToggle {
+
+    &:before {
+      @include tablet-up() {
+        display: none;
+      }
+    }
+  }
+
   &__subTitle {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;

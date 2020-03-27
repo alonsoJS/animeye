@@ -1,0 +1,10 @@
+$selector: '#root .detail';
+
+#{$selector} {
+  &__ul {
+    @include tablet-up() {
+      list-style: none;
+      padding-left: 16px;
+    }
+  }
+}

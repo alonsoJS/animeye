@@ -17,6 +17,11 @@ export default (state, action) => {
         ...state,
         is_loading_info: !state.is_loading_info
       };
+    case constants.UPDATE_IS_MOBILE:
+      return {
+        ...state,
+        is_mobile: action.payload
+      };
     default:
       return state;
   }

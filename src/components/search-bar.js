@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import useActions from "../use-actions";
 import constants from '../constants';
+import { useHistory } from "react-router-dom";
 
 function SearchBar() {
   const [query, setQuery] = useState('');
   const { search } = useActions();
+  let history = useHistory();
 
   function submit(e) {
     e.preventDefault();
-
-    search({
-      query
-    })
+    search({query});
+    history.push("/");
   }
 
   function onInputChange(e) {
