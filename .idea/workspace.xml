@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e5ec82d-8e13-435e-a3b9-0e70e11236c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/pages/detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/is-mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detail-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detail-sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detail-stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detail-stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/detail-text-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/detail-text-block.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/search-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search-results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search-results.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_detail-sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_detail-sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_detail-stats.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_detail-stats.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_detail-text-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_detail-text-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_logo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_main-frame.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_main-frame.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/use-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_search-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_search-bar.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,15 +47,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/_main-frame.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -114,11 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/search-bar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="383">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scss/components/_search-bar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -161,7 +141,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/scss/components/_card.scss" />
-        <option value="$PROJECT_DIR$/src/scss/components/_search-bar.scss" />
         <option value="$PROJECT_DIR$/src/components/logo.js" />
         <option value="$PROJECT_DIR$/src/scss/components/header.scss" />
         <option value="$PROJECT_DIR$/src/components/header.js" />
@@ -211,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/pages/search-results.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/search-bar.js" />
+        <option value="$PROJECT_DIR$/src/scss/components/_search-bar.scss" />
       </list>
     </option>
   </component>
@@ -239,6 +219,25 @@
               <item name="animeye" type="b2602c69:ProjectViewProjectNode" />
               <item name="animeye" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="animeye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="animeye" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="animeye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="animeye" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="animeye" type="b2602c69:ProjectViewProjectNode" />
+              <item name="animeye" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,12 +283,12 @@
       <workItem from="1585081773027" duration="5243000" />
       <workItem from="1585091344983" duration="4219000" />
       <workItem from="1585243801477" duration="324000" />
-      <workItem from="1585267468522" duration="11655000" />
+      <workItem from="1585267468522" duration="11935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46929000" />
+    <option name="totallyTimeSpent" value="47209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="972" extended-state="0" />
@@ -379,13 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/components/_search-bar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -682,8 +674,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/search-bar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="383">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/components/_search-bar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>

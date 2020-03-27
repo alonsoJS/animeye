@@ -6,6 +6,10 @@ $selector: '#root .searchBar';
     display: flex;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+
+    @include tablet-up() {
+      margin-left: 20px;
+    }
   }
 
   &__select {
@@ -38,7 +42,7 @@ $selector: '#root .searchBar';
     height: 39px;
     flex-basis: 100%;
     border: 1px solid $cerulean;
-    border-left: 0;
     border-right: 0;
+    border-radius: 5px 0 0 5px;
   }
 }

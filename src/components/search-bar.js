@@ -21,11 +21,11 @@ function SearchBar() {
   return (
     <div className="searchBar">
       <form onSubmit={submit} className="searchBar__form">
-        <select className="searchBar__select uk-select">
-          {
-            constants.search_selections.map((value, index) => <option value={value} key={index}>{value}</option>)
-          }
-        </select>
+        {/*<select className="searchBar__select uk-select">*/}
+        {/*  {*/}
+        {/*    constants.search_selections.map((value, index) => <option value={value} key={index}>{value}</option>)*/}
+        {/*  }*/}
+        {/*</select>*/}
         <input className="searchBar__searchInput uk-input" type="text" onChange={onInputChange} placeholder="Search" />
         <button type="submit" className="searchBar__submitBtn"><span className="fas fa-search"/></button>
       </form>
